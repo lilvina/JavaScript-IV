@@ -22,11 +22,7 @@ class GameObject {
     this.dimensions = game.dimensions
   }
   destroy() {
-    if(this.name !== undefined) {
-      return `${this.name} was destroyed`
-    } else {
-      return `${this.name} was removed from the game`
-    }
+    return `${this.name} was removed from the game!`
   }
 }
 
@@ -45,7 +41,7 @@ class CharacterStats extends GameObject{
     this.name = game.name
   }
   takeDamage() {
-    return this.name + ' took damage'
+    return `${this.name} took damage`
   }
 }
 

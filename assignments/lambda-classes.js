@@ -31,9 +31,12 @@ class Student extends Person {
     this.favSubjects = attributes.favSubjects
   }
   listSubjects() {
-    for(let i in this.favSubjects) {
-      console.log(this.favSubjects[i]);
-    }
+    this.favSubjects.forEach((element) => {
+      console.log(`Favorite subject is ${element}`)
+    })
+    // for(let i in this.favSubjects) {
+    //   console.log(this.favSubjects[i]);
+    // }
   }
   PRAssignment(subject) {
     console.log(`${this.name} has submitted a PR for ${subject}`);
